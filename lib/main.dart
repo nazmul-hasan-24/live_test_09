@@ -14,6 +14,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        elevatedButtonTheme: const ElevatedButtonThemeData(
+          style: ButtonStyle(
+            overlayColor: MaterialStatePropertyAll<Color>(Colors.amber)
+          )
+        ),
+        
       
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
@@ -23,5 +29,5 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//https://github.com/nazmul-hasan-24/live_test_09
+
 
