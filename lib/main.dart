@@ -14,9 +14,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        elevatedButtonTheme: const ElevatedButtonThemeData(
+        elevatedButtonTheme:  ElevatedButtonThemeData(
           style: ButtonStyle(
-            overlayColor: MaterialStatePropertyAll<Color>(Colors.amber)
+            padding: const MaterialStatePropertyAll<EdgeInsetsGeometry>(EdgeInsets.zero),
+            overlayColor: const MaterialStatePropertyAll<Color>(Colors.amber),
+            shape: MaterialStatePropertyAll<RoundedRectangleBorder>(RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(3)
+            ))
           )
         ),
         
